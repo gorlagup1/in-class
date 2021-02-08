@@ -194,15 +194,24 @@
     </div>
 
     <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/vue.js"></script>
+ 
     <script>
-        $(function(){
+        const person1 = {
+          name = "pavani Gorlagunta",
+          age = 23,
+          address: {
+            street: '29 F colonial Drive',
+            city: 'New Paltz',
+            state:'NY',
+            zip: '12561'
+          }
+        };
+        
 
-          $(".card").css("backgroundColor", "#AAFFAA")
+        console.log({person1});
 
-        })
-
-</script>
+    </script>
 </body> 
 </html>
 
