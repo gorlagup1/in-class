@@ -4,7 +4,7 @@ INTRODUCTION ABOUT MYSELF
 
 A picture of mine:
 
-
+![IMG_8306](https://user-images.githubusercontent.com/60485872/107377964-86eb6580-6ab9-11eb-813e-f965016ac365.JPG width="460" height="300")
 
 
 
@@ -25,10 +25,4 @@ A picture of mine:
 
     I see myself as a server-side programmer after learning this course. It is very interesting to learn JavaScript and learn how to access and manage database for a website. And, I see myself learning html and CSS coding which is again very interesting to learn. I also see myself creating dynamic websites.
 
-    © 2021 GitHub, Inc.
-    Terms
-    Privacy
-    Security
-    Status
-    Docs
-
+   
