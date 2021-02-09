@@ -18,18 +18,3 @@ body
    background: rgba(0,0,0,0.4);
    box-shadow: 0 2px 4px rgba(0,0,0,0.8);
 }
-.left-box
-{
-  position: absolute;
-  top:0;
-  left:0;
-  box-sizing: border-box; 
-  padding: 40px;
-  width: 300px;
-  height: 400px; 
-}
-h1
-{
-    margin-bottom: 20px;
-    font-size: 28px;
-}
