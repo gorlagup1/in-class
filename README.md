@@ -4,7 +4,7 @@ INTRODUCTION ABOUT MYSELF
 
 A picture of mine:
 
-![IMG_8306](https://user-images.githubusercontent.com/60485872/107382143-8fde3600-6abd-11eb-918e-b550da74442e.JPG width=250)
+![IMG_8306](https://user-images.githubusercontent.com/60485872/107382143-8fde3600-6abd-11eb-918e-b550da74442e.JPG = 250*250)
 
 
 
