@@ -3,16 +3,14 @@
 INTRODUCTION ABOUT MYSELF
 
 A picture of mine:
+
+
+
 <img src="https://user-images.githubusercontent.com/60485872/107382143-8fde3600-6abd-11eb-918e-b550da74442e.JPG" width="250" height="380" />
 
 
 
-
-
-
-
-
-    My name is PAVANI GORLAGUNTA, I am from India. I did my bachelor’s in computer science and I learned java, c language, python programming skills, database, and many other subjects which was very interesting. And now I am currently pursuing masters in sunny new Paltz. In my leisure time I usually like to watch tv, reading books, playing games, surfing internet. One of the funniest parts about me is that i love travelling a lot also doing painting and sketching. My favourite website is Geeks for Geeks and LeetCode.
+     My name is PAVANI GORLAGUNTA, I am from India. I did my bachelor’s in computer science and I learned java, c language, python programming skills, database, and many other subjects which was very interesting. And now I am currently pursuing masters in sunny new Paltz. In my leisure time I usually like to watch tv, reading books, playing games, surfing internet. One of the funniest parts about me is that i love travelling a lot also doing painting and sketching. My favourite website is Geeks for Geeks and LeetCode.
 
     I had a very good computer experience. Computer is the thing from which we can do any activity and very easy, we can do any complex things in computer. I’m proficient with Microsoft office, word excel, java programming. I’m very comfortable using these programs and have a lot of experience doing so. I am comfortable using computers and, I am confident in my ability to learn any new programs. I can create fully functional spreadsheets and am familiar with organizing large sets of data.
 
