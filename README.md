@@ -3,7 +3,7 @@
 INTRODUCTION ABOUT MYSELF
 
 A picture of mine:
-<img src="https://user-images.githubusercontent.com/60485872/107382143-8fde3600-6abd-11eb-918e-b550da74442e.JPG" width="200" height="400" />
+<img src="https://user-images.githubusercontent.com/60485872/107382143-8fde3600-6abd-11eb-918e-b550da74442e.JPG" width="250" height="380" />
 
 
 
