@@ -1,6 +1,5 @@
-<!-- template and script are common--> 
 <template>
-   <h1> hello from home component </h1> 
+    <h1> Hello this is my first program</h1>
 </template>
 
 <script>
