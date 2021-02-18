@@ -1,7 +1,7 @@
 INTRODUCTION ABOUT MYSELF
 A picture of mine:
 
-<img src="https://user-images.githubusercontent.com/60485872/108430426-5620d400-720f-11eb-93ec-640577035e6e.JPG" width="250" height="200"/>
+<img src="https://user-images.githubusercontent.com/60485872/108430426-5620d400-720f-11eb-93ec-640577035e6e.JPG" width="250" height="250"/>
 
 
 
