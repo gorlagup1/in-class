@@ -6,7 +6,7 @@
   "dev":"nodemon  --watch server server/index.js",
   "run":"node server/index.js"
   },
-  "dependencies": {
+  "dependencies": { 
     "express": "^4.17.1", 
     "moment": "^2.29.1",
     "dotenv": "^8.2.0"
