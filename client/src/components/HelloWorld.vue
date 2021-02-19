@@ -46,11 +46,12 @@ h3 {
   margin: 40px 0 0;
 }
 ul {
-  list-style-type: none;
+  list-style-type: disc;
   padding: 0;
 }
 li {
-  display: inline-block;
+  display: list-item;
+  font-family: 'Courier New', Courier, monospace;
   margin: 0 10px;
 }
 a {
