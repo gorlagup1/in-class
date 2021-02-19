@@ -4,7 +4,7 @@
     <h1> Hi this is new awesome code </h1>
     <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
-</template>
+</template> 
 
 <script>
 // @ is an alias to /src
