@@ -1,4 +1,5 @@
 import Vue from 'vue';
+var PORT = process.env.PORT || 5000;
 import VueRouter from 'vue-router';
 import Home from '../views/Home.vue';
 import Documentation from '@/views/Documentation';
