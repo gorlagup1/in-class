@@ -42,12 +42,7 @@ export default {
 <style>
 </style>
 
-    © 2021 GitHub, Inc.
-    Terms
-    Privacy
-    Security
-    Status
-    Docs
+   
 
 
    
