@@ -6,7 +6,7 @@
                 <figure class="image is-48x48">
                     <img :src="post.user.pic" :alt="post.user.name" />
                 </figure>
-            </div>
+            </div> 
             <div class="media-content">
                 <p class="title is-4">{{post.user.name}}</p>
                 <p class="subtitle is-6">{{post.user.handle}}</p>
