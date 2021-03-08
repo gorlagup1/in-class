@@ -32,7 +32,7 @@ export default {
         },
         logout(){
             this.Session.user = null
-        }
+        } 
     }
 }
 </script>
