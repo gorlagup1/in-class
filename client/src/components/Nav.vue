@@ -64,6 +64,12 @@
 
 <script>
 export default {
+      data: ()=> ({
+        isActive: false
+    }),
+    components: {
+      LoginBadge
+    }
 }
 </script>
 
