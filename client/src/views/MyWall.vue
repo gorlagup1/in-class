@@ -2,7 +2,9 @@
   <div id="my-wall">
       <div class="columns">
           <div class="column is-one-quarter">
-
+              <div class="content-item">
+                  <FriendsShort />
+              </div>
           </div>
           <div class="column">
 
@@ -90,7 +92,12 @@
                 <ContentCard :post="post" />
               </div>
           </div>
-          <div class="column is-one-quarter"></div>
+          <div class="column is-one-quarter">
+              <div class="content-item">
+                <ContentCard :post="newPost" />
+              </div>
+
+          </div>
       </div>
   </div>
 </template>
@@ -131,7 +138,7 @@ export default {
                 caption: "Have a wonderful day",
                 time: Date(),
                 user: {
-                    name: "Moshe Plotkin",
+                    name: "Pavani Gorlagunta",
                     handle: "@johnsmith",
                     pic: "https://bulma.io/images/placeholders/96x96.png"
                 }
