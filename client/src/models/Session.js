@@ -5,3 +5,9 @@ export default {
     user: null,
     message: [] // To be used later
 }
+
+export default Session;
+
+export function Login(){
+    
+}

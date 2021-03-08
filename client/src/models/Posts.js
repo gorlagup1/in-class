@@ -28,9 +28,20 @@ posts: [
         time: Date(),
         user: {
             name: "Pavani Gorlagunta",
-            handle: "@johnsmith",
+            handle: "@pavanicuti",
             pic: "https://bulma.io/images/placeholders/96x96.png"
         }
     }, 
-]
-}),
+];
+
+export function GetMyPosts(){
+    return GetPostsForUser(Session.user.handle);
+}
+
+export function GetPostsForUser(id){
+    return posts.filter( x=> x.user.handle == id);
+}
+export function GetMyFeed(){
+    return posts;
+}
+
