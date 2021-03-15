@@ -2,7 +2,7 @@
 
 */
 const express = require('express');
-const model = requires('../models/users');
+const model = require('../models/users');
 
 const app =express.Router();
 
