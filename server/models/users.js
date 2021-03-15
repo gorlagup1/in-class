@@ -1,12 +1,8 @@
 /* B"H
-
 */
-const express = require('express');
-const model = requires('../models/users');
 
-const app =express.Router();
+const list = [
+    { name: 'Pavani Gorlagunta'}
+];
 
-    app
-        .get('/', (req, res)=> res.send(model.GetAll() ) )
-      
-module.exports = app;
+module.exports.GetAll = ()=> list;
