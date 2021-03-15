@@ -6,14 +6,14 @@
             Ista-Gratitude
           </a>
       
-          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" :class="{ 'is-active': isActive }" @click.prevent="isActive = !isActive" >
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
           </a>
         </div>
       
-        <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-menu"  :class="{ 'is-active': isActive }">
           <div class="navbar-start">
 
           <router-link to="/" class="navbar-item" >Feed</router-link>
@@ -47,14 +47,7 @@
           <div class="navbar-end">
           <router-link to="/Shop"  class="navbar-item">Shop</router-link>
             <div class="navbar-item">
-              <div class="buttons">
-                <a class="button is-primary">
-                  <strong>Sign up</strong>
-                </a>
-                <a class="button is-light">
-                  Log in
-                </a>
-              </div>
+              <login-badge />
             </div>
           </div>
         </div>
@@ -63,8 +56,9 @@
 </template>
 
 <script>
+import LoginBadge from "./LoginBadge";
 export default {
-      data: ()=> ({
+    data: ()=> ({
         isActive: false
     }),
     components: {
@@ -75,5 +69,3 @@ export default {
 
 <style>
 </style>
-
-    
