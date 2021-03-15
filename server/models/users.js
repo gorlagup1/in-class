@@ -12,7 +12,11 @@ module.exports.Add = (user)=> {
     return user;
 }
 module.exports.Update = (user_id,user)=> {
-    list[user_id] = user;
+    const oldObj = list[user_id];
+    console.log({oldobj, user});
+    const newObj = { ...oldObj, ...user};
+    console.log({ newObj})
+    list[user_id] = { ...list[user_id], ...user};
     return user;
 }
 module.exports.Delete = (user_id)=> {
