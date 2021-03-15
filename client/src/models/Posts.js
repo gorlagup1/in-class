@@ -1,4 +1,9 @@
-posts: [
+import Session from "./Session";
+
+/* B"H
+    Access to all the posts
+*/
+const posts = [
     { 
         src: "https://bulma.io/images/placeholders/1280x960.png",
         alt: "Placeholder image",
@@ -28,10 +33,10 @@ posts: [
         time: Date(),
         user: {
             name: "Pavani Gorlagunta",
-            handle: "@pavanicuti",
+            handle: "@gorlagup1",
             pic: "https://bulma.io/images/placeholders/96x96.png"
         }
-    }, 
+    },
 ];
 
 export function GetMyPosts(){
@@ -39,9 +44,9 @@ export function GetMyPosts(){
 }
 
 export function GetPostsForUser(id){
-    return posts.filter( x=> x.user.handle == id);
+    return posts.filter( x=> x.user.handle == id );
 }
+
 export function GetMyFeed(){
     return posts;
 }
-
