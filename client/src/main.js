@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
-import FriendShort from"./components/FriendsShort";
+import FriendsShort from "./components/FriendsShort";
 
 import 'bulma';
 import 'buefy/dist/buefy.css';
@@ -14,5 +14,7 @@ Vue.config.productionTip = false
 new Vue({
   router,
   render: h => h(App)
-}).$mount('#app') 
+}).$mount('#app')
+
+    
 
