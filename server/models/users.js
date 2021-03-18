@@ -13,6 +13,7 @@ module.exports.Add = (user)=> {
 }
 module.exports.Update = (user_id,user)=> {
     const oldObj = list[user_id];
+    
     console.log({oldobj, user});
     const newObj = { ...oldObj, ...user};
     console.log({ newObj})
