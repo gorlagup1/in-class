@@ -10,7 +10,7 @@
             </a>
         </div>
         <div v-else>
-            Hello Moshe Plotkin
+            Hello Pavani Gorlagunta
             (<a @click="logout">
                 Log out
             </a>)
