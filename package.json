@@ -3,16 +3,15 @@
   "version": "1.0.0",
   "description": "The server package for our application",
   "scripts": {
-    "dev": "nodemon  --watch server server/index.js",
-    "run": "node server/index.js"
+    "dev": "nodemon --watch server server/index.js",
+    "start": "node server/index.js"
   },
   "dependencies": {
-    "buefy": "^0.9.4",
-    "bcrypt":"^5.0.1",
-    "jsonwebtoken": "^8.5.1",
     "express": "^4.17.1",
+    "bcrypt": "^5.0.1",
+    "jsonwebtoken": "^8.5.1",
     "moment": "^2.29.1",
-    "dotenv":"8.2.0"
+    "dotenv": "^8.2.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.7"
