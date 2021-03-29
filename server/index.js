@@ -22,11 +22,12 @@ app
     .get('*', (req, res) => {
         res.sendFile( path.join(__dirname, '../docs/index.html' ) );
     })
+
     .use((error, req, res, next)=>{
       console.error(error);
 
-      res.status(error.code || 500);
-      res.sendFile( path.join(__dirname, '../docs/index.html') );
+        res.status(error.code || 500 );
+        res.send( { msg: error.msg });
     })
 
 app.listen(port, () => {
