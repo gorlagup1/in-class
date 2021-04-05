@@ -1,12 +1,16 @@
 /* B"H
 */
 const bcrypt = require('bcrypt');
+const jwt = require('jsonwebtoken');
+
+const SALT_ROUNDS = process.env.SALT_ROUNDS;
+const JWT_SECRET = process.env.JWT_SECRET;
 
 const list = [
     { 
-        firstName: 'Pavani',
-        lastName: 'Gorlagunta',
-        handle: '@gorlagup1',
+        firstName: 'Moshe',
+        lastName: 'Plotkin',
+        handle: '@JewPaltz',
         pic: 'https://bulma.io/images/placeholders/96x96.png',
         password: 'Me',
     },
@@ -39,7 +43,7 @@ module.exports.Add = (user)=> {
 }
 module.exports.Register = async (user)=> {
 
-    const hash = await bcrypt.hash(user.password, 8);
+    const hash = await bcrypt.hash(user.password, +SALT_ROUNDS);
 
     user.password = hash;
 
@@ -74,10 +78,29 @@ module.exports.Delete = (user_id)=> {
     return user;
 }
 
-module.exports.Login = (handle, password) =>{
+module.exports.Login = async (handle, password) =>{
     console.log({ handle, password})
-    const user = list.find(x=> x.handle == handle && x.password == password);
-    if(!user) throw { code: 401, msg: "Wrong Username or Password" };
+    const user = list.find(x=> x.handle == handle);
+    if(!user) throw { code: 401, msg: "Sorry there is no user with that handle" };
 
-    return user;
+    if( ! await bcrypt.compare(password, user.password) ){
+        throw { code: 401, msg: "Wrong Password" };
+    }
+
+    const data = { ...user, password: undefined };
+
+    const token = jwt.sign(data, JWT_SECRET)
+
+    return { user, token };
+}
+
+module.exports.FromJWT = async (token) =>{
+    try {
+        const user = jwt.verify(token, JWT_SECRET);
+        return user;       
+    } catch (error) {
+        console.log({error});
+        return null;
+    }
+
 }
