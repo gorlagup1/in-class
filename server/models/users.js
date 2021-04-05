@@ -8,9 +8,9 @@ const JWT_SECRET = process.env.JWT_SECRET;
 
 const list = [
     { 
-        firstName: 'Moshe',
-        lastName: 'Plotkin',
-        handle: '@JewPaltz',
+        firstName: 'Pavani',
+        lastName: 'Gorlagunta',
+        handle: '@gorlagup1',
         pic: 'https://bulma.io/images/placeholders/96x96.png',
         password: 'Me',
     },
