@@ -18,10 +18,10 @@ app
     .use(express.json())
     .use(express.static('./docs'))
 
-    .use((req, res, next)=>{ 
+    .use(async (req, res, next)=>{ 
         
         const token = req.headers.authorization?.split(' ')[1];
-        req.user = token && usersModel.FromJWT(token);
+        req.user = token && await usersModel.FromJWT(token);
         next();
     }) 
 
@@ -44,3 +44,6 @@ app
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })
+
+    
+
