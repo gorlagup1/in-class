@@ -16,6 +16,10 @@ const app = express.Router();
             }
 
         }  )
+        .get('/feed', (req, res)=>{
+
+            res.send(model.GetFeed(req.user.handle));
+        })
         .get('/:post_id',(req, res)=> {
             
             if(+req.params.post_id){
@@ -40,8 +44,7 @@ const app = express.Router();
 
         ) )
         
-        .delete('/:post_id', (req, res)=> res.send( model.Delete(req.params.post_id) 
-) )
+        .delete('/:post_id', (req, res)=> res.send( model.Delete(req.params.post_id) ))
 
 
 module.exports = app;
