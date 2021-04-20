@@ -1,18 +1,28 @@
 <template>
   <div id="users">
       <div class="columns">
-          <div class="column">
-              <h1 class="title is-1">Users Page</h1>
-                <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
-                    <tr><th>First Name</th><th>Last Name</th><th>Handle</th></tr>
+          <div class="column is-one-quarter">
+              <div class="content-item">
+                  <FriendsShort />
+              </div>
+              </div>
+              <div class="column">
 
-                    <tr v-for="user in users" :key="user.handle">
-                        <td>{{user.firstName}}</td>
-                        <td>{{user.lastName}}</td>
-                        <td>{{user.handle}}</td>
-                    </tr>
+                  <div class="content-item">
+                  <content-creation :newPost="newPost" @add="addPost" />
+              </div>
 
-                </table>
+              <div class="content-item" v-for="(post, i) in posts" :key="i">
+                <ContentCard :post="post" @delete="deletePost(i)" />
+              </div>
+          </div>
+          <div class="column is-one-quarter">
+              <div class="content-item">
+                <ContentCard :post="newPost" />
+              </div>
+              
+
+                </div>
           </div>
       </div>
   </div>
@@ -20,18 +30,33 @@
 
 <script>
 import Vue from "vue";
+import ContentCard from "../components/ContentCard";
+import ContentCreation from '../components/ContentCreation.vue';
 import { GetAllUsers } from "../models/Users";
 export default Vue.extend({
     data: ()=> ({
-        users: []
+        newPost:{
+        users: { }
+    },
+    posts: []
     }),
     async mounted() {
-        this.users = await GetAllUsers();
+        this.posts = await GetMyPosts();
     },
     components: {
+        ContentCard,
+        ContentCreation
     },
     methods: {
-    }
+        addPost(){
+            this.posts.unshift(this.newPost);
+            this.newPost = { user:{} }
+        },
+        deletePost(i){
+            this.posts.splice(i,1);
+        }
+        }
+    
 })
 </script>
 
