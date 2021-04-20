@@ -25,14 +25,14 @@
                 </div>
           </div>
       </div>
-  </div>
+  
 </template>
 
 <script>
 import Vue from "vue";
 import ContentCard from "../components/ContentCard";
 import ContentCreation from '../components/ContentCreation.vue';
-import { GetAllUsers } from "../models/Users";
+import { GetMyPosts } from "../models/Posts";
 export default Vue.extend({
     data: ()=> ({
         newPost:{
