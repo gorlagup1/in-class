@@ -24,7 +24,7 @@ const list = [
         alt: "Placeholder image",
         caption: "Have a wonderful day",
         time: Date(),
-        user_handle: "@JewPaltz",
+        user_handle: "@gorlagup1",
         isPublic: true,
     },
 ];
