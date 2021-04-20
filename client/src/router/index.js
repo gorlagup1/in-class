@@ -38,6 +38,7 @@ const router = new VueRouter({
 router.beforeEach( (to, from, next) =>{
     console.log({ from, to })
     if(to.path == '/mywall' && !Session.user){
+      Session.nextRoute = to;
      next('/login') 
     }else{
       next();
