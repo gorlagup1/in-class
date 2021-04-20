@@ -50,7 +50,7 @@ export default Vue.extend({
     methods: {
        async addPost(){
            const post = await AddPost(this.newPost)
-            this.posts.unshift(this.newPost);
+            this.posts.unshift(post);
             this.newPost = { user: Session.user }
         },
     async deletePost(i){
