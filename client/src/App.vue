@@ -24,11 +24,10 @@ export default {
         /*global fb*/
          windows.fbSsyncInit = function(){
           FB.init({
-           appId         :
-           cookie        : true,
-           xfbml         : true,
-           version      :'v10.0'
-            });
+           xfbml               : true,
+           version             : 'v10.0'
+          });
+         };
             
 
         (function(d, s, id){
@@ -42,21 +41,6 @@ export default {
         
 </script>
   
-
-
-      </template>
-      
-      <script>
-      export default {
-      
-      }
-      </script>
-      
-      <style>
-      
-      </style>
-    })
-  }
 <style lang="scss">
 
 </style>
