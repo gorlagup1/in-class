@@ -22,19 +22,23 @@ export default {
   }
 }
         /*global fb*/
-         windows.fbSsyncInit = function(){
+         window.fbAsyncInit = function() {
           FB.init({
-           xfbml               : true,
-           version             : 'v10.0'
+            appId      : '509660520411411',
+            cookie     : true,
+            xfbml      : true,
+            version    : 'v10.0'
           });
-         };
-            
+      
+          FB.AppEvents.logPageView();   
+      
+        }; 
 
         (function(d, s, id){
-          var js, fjs = d.getElementByTagName(s)[0];
-          if(d.getElementByiD(ID)) RETURN;
-          JS = D.CREATEeLEMENT(S); JS.ID = ID;
-          JS.SRC = 'https://connect.facebook.net/en_us/sdk/xfbml.customerchat.js';
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) {return;}
+          js = d.createElement(s); js.id = id;
+          JS.SRC = 'https://connect.facebook.net/en_US/sdk.js';
           fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
 
@@ -44,3 +48,4 @@ export default {
 <style lang="scss">
 
 </style>
+
