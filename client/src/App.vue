@@ -22,12 +22,14 @@ export default {
   }
 }
         /*global fb*/
-        window.fbAsyncInit = function(){
+         windows.fbSsyncInit = function(){
           FB.init({
-            xfbml            : true,
-            version          : 'v10.0'
-          });
-        };
+           appId         :
+           cookie        : true,
+           xfbml         : true,
+           version      :'v10.0'
+            });
+            
 
         (function(d, s, id){
           var js, fjs = d.getElementByTagName(s)[0];
@@ -39,7 +41,22 @@ export default {
 
         
 </script>
+  
 
+
+      </template>
+      
+      <script>
+      export default {
+      
+      }
+      </script>
+      
+      <style>
+      
+      </style>
+    })
+  }
 <style lang="scss">
 
 </style>
