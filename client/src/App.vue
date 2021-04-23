@@ -6,10 +6,11 @@
     </div>
 
     <div id = "fb-root"></div>
-    <div>
-
-
- </div>
+    <div class="fb-customerchat"
+      attribution="fb-customerchat"
+      page_id="267612484194">
+    </div>
+</div>
 </template>
 
 
