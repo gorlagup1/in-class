@@ -7,7 +7,7 @@
 
     <div id = "fb-root"></div>
     <div class="fb-customerchat"
-      attribution="fb-customerchat"
+      attribution="biz_inbox"
       page_id="267612484194">
     </div>
 </div>
