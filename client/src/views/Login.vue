@@ -42,7 +42,7 @@
 </template>
 
 <script>
-import { Login } from "../models/Session";
+import Session, { Login } from "../models/Session";
 export default {
     data: ()=>({
         handle: null,
