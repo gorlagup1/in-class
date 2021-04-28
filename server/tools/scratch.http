@@ -1,4 +1,6 @@
 http://localhost:3000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaXJzdE5hbWUiOiJNb3NoZSIsImxhc3ROYW1lIjoiUGxvdGtpbiIsImhhbmRsZSI6IkBKZXdQYWx0eiIsInBpYyI6Imh0dHBzOi8vYnVsbWEuaW8vaW1hZ2VzL3BsYWNlaG9sZGVycy85Nng5Ni5wbmciLCJpc0FkbWluIjp0cnVlLCJmb2xsb3dpbmciOlt7ImhhbmRsZSI6IkB2cCIsImlzQXBwcm92ZWQiOnRydWV9LHsiaGFuZGxlIjoiQGpvaG5zbWl0aCIsImlzQXBwcm92ZWQiOnRydWV9XSwiaWF0IjoxNjE3NjQ5Nzk5fQ.fj_6mZMKDQQW3NquPJsfofesWXpzpJ3Pgjks0C3ElaM
+
 
 ###
 POST http://localhost:3000/users/register
@@ -11,14 +13,15 @@ Content-Type: application/json
     "password": "DrJill"
 }
 
+
 ###
-POST http://localhost:3000/users/login
+POST http://localhost:3000/users/loginFB
 Content-Type: application/json
 
 {
-    "handle": "@gorlagup1",
-    "password": "Me"
+     "access_token": "EABMoWFDtX9sBANk9T3oi3IfqsJjDWVUyd5wS7P5XhVRT4s4eLKbAfyf4gwbwgI2ZAwwBrTPIh5Ou5J6ECr10BSnMEw1qjcpP3sm1dkiJFw62ZB2SYAkJ6e5X2UIbzF2aDCZCgFtR3mgeZBoRe72oMw6ZCVdaYFnPLuKKtIsAlLO5fZCNn8UZAJGxlzwkXzY1n4FKxQ0rKNMBgZDZD"
 }
+
 
 ###
 POST http://localhost:3000/users/login
@@ -30,7 +33,7 @@ Content-Type: application/json
 }
 
 ###
-http://localhost:3000/posts/@vp
+POST http://localhost:3000/users/@vp
 //Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaXJzdE5hbWUiOiJKb2UiLCJsYXN0TmFtZSI6IkJpZGVuIiwiaGFuZGxlIjoiQHBvdHVzIiwiaWF0IjoxNjE3NjQ4MTgzfQ.zomTcoWyunZAAvHYNUkPDSlCZpVxoUH52bhADig8otE
 // My token
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaXJzdE5hbWUiOiJNb3NoZSIsImxhc3ROYW1lIjoiUGxvdGtpbiIsImhhbmRsZSI6IkBKZXdQYWx0eiIsInBpYyI6Imh0dHBzOi8vYnVsbWEuaW8vaW1hZ2VzL3BsYWNlaG9sZGVycy85Nng5Ni5wbmciLCJpc0FkbWluIjp0cnVlLCJmb2xsb3dpbmciOlt7ImhhbmRsZSI6IkB2cCIsImlzQXBwcm92ZWQiOnRydWV9LHsiaGFuZGxlIjoiQGpvaG5zbWl0aCIsImlzQXBwcm92ZWQiOnRydWV9XSwiaWF0IjoxNjE3NjQ5Nzk5fQ.fj_6mZMKDQQW3NquPJsfofesWXpzpJ3Pgjks0C3ElaM
@@ -49,3 +52,4 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaXJzdE5hbWUiOiJKb
 }
 
     
+
