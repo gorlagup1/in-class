@@ -13,8 +13,8 @@ const Session = {
 }
 export default Session;
 
-export async function LoginFB(access_token){
-    const {user, token} = await api('users/loginFB', { access_token })
+export async function Login(handle, password){
+    const {user, token} = await api('users/login', { handle, password })
     Session.user = user;
     Session.token = token;
 
